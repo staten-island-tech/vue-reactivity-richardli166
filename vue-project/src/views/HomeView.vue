@@ -1,15 +1,15 @@
 <template>
   <div>
-<DestCard v-for="destination in destinations" 
-:key="destination.name"
-:Destination="destination"
-/>
-</div>
+    <DestCard v-for="destination in destinations" 
+    :key="destination.name"
+    :Destination="destination"
+  />
+  </div>
 </template>
 
 <script setup>
-import DestCard from '@/components/DestCard.vue';
-const destinations = [{
+  import DestCard from '@/components/DestCard.vue';
+  const destinations = [{
           name: "Venetian Renaissance",
           International: true,
           price: 1300,
@@ -49,7 +49,7 @@ const destinations = [{
 </script>
 
 <style scoped>
-h1{
-  color: red;
-}
+  h1{
+    color: red;
+  }
 </style>
