@@ -11,7 +11,7 @@ import { RouterLink, RouterView } from 'vue-router'
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/about">Your Cart</RouterLink>
       </nav>
     </div>
   </header>
@@ -35,14 +35,6 @@ nav {
   font-size: 12px;
   text-align: center;
   margin-top: 2rem;
-}
-
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
 }
 
 nav a {
