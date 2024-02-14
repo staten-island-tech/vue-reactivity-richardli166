@@ -1,6 +1,6 @@
 <template>
   <div>
-    <DestCard v-for="item in items" 
+    <TetrisCard v-for="item in items" 
     :key="item.name"
     :items="item"
   />
@@ -8,7 +8,7 @@
 </template>
 
 <script setup>
-  import DestCard from '@/components/DestCard.vue';
+  import TetrisCard from '@/components/TetrisCard.vue';
   const items = [
     {
       name: "I-Piece",
