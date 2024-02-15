@@ -2,9 +2,9 @@
     <div>
         <h2>{{ items.name }}</h2>
         <h3>{{ items.price }}</h3>
-        <img :src="items.img" alt= {{ items.name }}/>
+        <img :src="items.img" :alt="items.name"/>
         <h2>{{ clicked }}</h2>
-        <button @click="increment">Add to Your cart</button>
+        <button @click="increment">Buy me!</button>
     </div>
 </template>
 
@@ -13,7 +13,6 @@
         const props = defineProps({
         items: Object, 
         });
-        console.log(items.name);
 //clicker logic 
     const clicked = ref(0);
     function increment(){
