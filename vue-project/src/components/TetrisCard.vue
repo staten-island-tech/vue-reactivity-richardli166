@@ -2,7 +2,7 @@
 
         <div class="card center">
         <h2>{{ items.name }}</h2>
-        <h3>{{ items.price }}</h3>
+        <h3>${{ items.price }}</h3>
             <img :src="items.img" :alt="items.name"/>
             <h2>{{ clicked }}</h2>
             <button @click="increment(items.name, items.price, items.img)">Buy me!</button>
