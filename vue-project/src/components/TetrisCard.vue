@@ -42,4 +42,9 @@
     align-items: center;
     flex-direction: column;
 }
+button{
+    width: 6vh;
+    height: 6vh;
+    font-size: 2vh;
+}
 </style>

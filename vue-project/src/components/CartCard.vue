@@ -2,7 +2,6 @@
   <div class="card center">
     <h2>You Bought: {{ name }}</h2>
     <h3>Each cost: ${{ price }}</h3>
-    <img :src="image" :alt="name" />
     <h2>You Bought this much: {{ amount }}</h2>
   </div>
 

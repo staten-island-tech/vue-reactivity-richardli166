@@ -17,9 +17,7 @@
 import { store } from '../stores/allvar.js';
 import CartCard from '@/components/CartCard.vue';
 
-
 const carts = store.getCart();
-
 
 </script>
 
