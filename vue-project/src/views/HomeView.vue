@@ -1,17 +1,25 @@
 <template>
-  <div>
-    <TetrisCard v-for="item in items" 
+  <div class = "box">
+      <TetrisCard v-for="item in items" 
     :key="item.name"
     :items="item"
   />
+    
   </div>
 </template>
 
 <script setup>
-  import TetrisCard from '@/components/TetrisCard.vue';
-  import { items } from '@/router/items.js';
+import { ref } from 'vue'
+import TetrisCard from '@/components/TetrisCard.vue';
+import { items } from '@/stores/array.js';
 
 </script>
 
 <style scoped>
+.box{
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 </style>

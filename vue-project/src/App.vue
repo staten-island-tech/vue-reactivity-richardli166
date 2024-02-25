@@ -1,26 +1,27 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
+
+
 </script>
 
 <template>
   <header>
     <div class="pages">
       <nav>
-        <RouterLink to="/">Home</RouterLink><br>
-        <RouterLink to="/cart">Things You Bought!</RouterLink>
+        <RouterLink to="/cart">Cash Out</RouterLink>
       </nav>
     </div>
   </header>
+
 <div class = "homeview">
-  <RouterView />
+    <RouterView />
   </div>
 </template>
 
 <style scoped>
 .homeview{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 100%;
+  height: 30rem;
 }
 .pages{
   display: flex;
