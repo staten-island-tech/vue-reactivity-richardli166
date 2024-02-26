@@ -1,8 +1,7 @@
 <template>
   <div class = "box">
       <TetrisCard v-for="item in items" 
-    :key="item.name"
-    :items="item"
+      :Items="item"
   />
     
   </div>

@@ -1,29 +1,22 @@
 <template>
-
-        <div class="card center">
-        <h2>{{ items.name }}</h2>
-        <h3>${{ items.price }}</h3>
-            <img :src="items.img" :alt="items.name"/>
-            <h2>{{ clicked }}</h2>
-            <button @click="increment(items.name, items.price, items.img)">Buy me!</button>
+    <div class="card center">
+        <h2>{{ Items.name }}</h2>
+        <h3>${{ Items.price }}</h3>
+        <img :src="Items.img" :alt="Items.name"/>
+        <h2>{{ Items.purchaseCount }}</h2>
+        <button @click="increment">Buy me!</button>
     </div>
-
 </template>
 
-    <script setup>
-        import { store } from '../stores/allvar.js';
-        import { ref } from 'vue';
+<script setup>
 
-        const props = defineProps({
-        items: Object, 
-        });
+const props = defineProps({
+    Items: Object, 
+});
 
-//clicker logic 
-    const clicked = ref(0);
-    function increment(name, price, imagescr) {
-        ++clicked.value;
-        store.addTetris(name, price, imagescr, clicked.value)
-    };
+function increment() {
+    props.Items.purchaseCount.value++;
+};
 
 </script>
 

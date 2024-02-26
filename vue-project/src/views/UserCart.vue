@@ -2,24 +2,24 @@
   <div class="cart">
     <h1>Things You Bought:</h1>
 
-    <CartCard v-for="cart in carts" 
-      :key="cart.name"
-      :items="cart"
-      :name= "cart.name"
-      :price="cart.price"
-      :src="cart.imagesrc"
-      :amount="cart.amount"
-    />
+    <CartCard v-for="item in items"
+    :item="item"/>
     
   </div>
 </template>
 <script setup>
-import { store } from '../stores/allvar.js';
-import CartCard from '@/components/CartCard.vue';
 
-const carts = store.getCart();
+import { items } from '@/stores/array';
+import CartCard from '@/components/CartCard.vue';
 
 </script>
 
 <style scoped>
+
+.cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 </style>
